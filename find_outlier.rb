@@ -15,16 +15,21 @@ def find_outlier(integers)
 evens = []
 odds = []
     integers.each do |num|
-        unless num % 2 == 0 
+        if num % 2 == 1 
             odds << num
         else
             evens << num
         end
 
+    end
         if odds.length == 1
             puts odds
         else
             puts evens
         end
-    end
 end
+
+
+find_outlier([0, 1, 2])
+find_outlier([1, 2, 3])
+find_outlier([2, 6, 8, 10, 3])
