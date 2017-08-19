@@ -16,4 +16,9 @@ def friend(friends)
     p my_friends 
 end
 
+#alternate solution
+def friend(friends)
+  friends.select { |name| name.length == 4 }
+end
+
 friend(["Ryan", "Kieran", "Mark"])
