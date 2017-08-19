@@ -4,20 +4,20 @@
 
 def get_sum(a,b)
     if a > b
-        larger_num = a
-        smaller_num = b
+       sum = (b..a).inject(:+)
     elsif b > a
-        larger_num = b
-        smaller_num = a
+        sum = (a..b).inject(:+)
     else
         sum = a
     end
-    sum = (smaller_num..larger_num).sum
     p sum
 end
 
 
-get_sum(5,-1)
-get_sum(0,-1)
-get_sum(1,2)
+get_sum(0, 1)
+get_sum(0, -1)
+get_sum(1, 2)
+get_sum(5, -1)
+
+
 
