@@ -17,8 +17,9 @@ def friend(friends)
 end
 
 #alternate solution
-def friend(friends)
-  friends.select { |name| name.length == 4 }
-end
+
+# def friend(friends)
+#   friends.select { |name| name.length == 4 }
+# end
 
 friend(["Ryan", "Kieran", "Mark"])
