@@ -22,3 +22,9 @@ def longest(a1, a2)
 end
 
 longest("aretheyhere", "yestheyarehere")
+
+#Alternate solution
+
+# def longest(a, b)
+#   (a+b).chars.uniq.sort.join
+# end
